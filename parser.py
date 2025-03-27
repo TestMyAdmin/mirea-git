@@ -28,6 +28,8 @@ def parse_website(url):
             for link in links:
                 writer.writerow(['Ссылка', f"{link.text.strip()} - {link.get('href', '')}"])
 
+        print(f"Данные успешно сохранены в файл: {filename}")
+
     except Exception as e:
         print(f"Произошла ошибка: {e}")
 
